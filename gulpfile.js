@@ -21,14 +21,14 @@ function compiledcss(){
     .pipe(sass())
     .pipe(prefix())
     .pipe(minify())
-    .pipe(dest('/dist/css'))
+    .pipe(dest('dist/css'))
 }
 
 //js
 function jsmin(){
 return src('src/js/*.js')
 .pipe(terser())
-.pipe(dest('/dist/js'))
+.pipe(dest('dist/js'))
 }
 //images
 
